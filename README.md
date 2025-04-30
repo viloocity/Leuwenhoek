@@ -52,45 +52,6 @@ By developing a testing framework around a formalized constitution, we can evalu
 └── README.md            # This document
 ```
 
-## Getting Started
-
-### Prerequisites
-
-- Python 3.8 or higher
-- `pip` for package management
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-org/constitutional-audit.git
-   cd constitutional-audit
-   ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-### Usage
-
-1. Select or define a constitution file under `constitutions/`.
-2. Run the audit script with your desired model:
-   ```bash
-   python src/audit.py \
-     --model gpt-4 \
-     --constitution constitutions/default.yaml \
-     --output data/results.csv
-   ```
-3. Inspect the generated compliance metrics in `data/results.csv`.
-
-## Contributing
-
-Contributions are welcome! Please open issues or pull requests to:
-
-- Add new constitution rules
-- Support additional models or interfaces
-- Improve reporting and visualization
-
 ## License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
