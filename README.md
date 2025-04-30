@@ -6,14 +6,17 @@
 
 ## Overview
 
-This project implements **constitutional auditing** for large language models (LLMs). The goal is to define and enforce organizational policies ("constitutions")—for example, no profanity, no disclosure of sensitive employee information (SSNs, etc.)—across various LLM deployments.
+This project implements **constitutional auditing** for large language models (LLMs). The goal is to define and enforce organizational policies ("constitutions")—for example, no profanity, no disclosure of sensitive employee information, SSNs, etc. —across various LLM deployments.
 
 ## Motivation
 
-Organizations often have internal rules and policies beyond basic moderation (3H: hate, harassment, and harmful content). Enforcing these policies consistently in LLM-powered applications is challenging:
+Organizations often have internal rules and policies beyond 3H (Helpful, Healthy and Honest). Enforcing these constitutions consistently in LLM-powered applications is crucial for enterprises and non compliance may be linked to high fines or loss of reputation.
 
-- System prompts alone may be insufficient.
-- Hard-coded rules or external knowledge stores (RAG) add complexity.
+Possible methods to implement constitutions are:
+
+- System prompts (eg custom GPTs)
+- Hard-coded rules 
+- control over organizational context as in RAG or external data stores
 
 By developing a testing framework around a formalized constitution, we can evaluate and compare how well different LLMs adhere to policy in diverse environments.
 
@@ -26,9 +29,6 @@ By developing a testing framework around a formalized constitution, we can evalu
 ## What’s Been Achieved (as of April 30, 2025)
 
 - Initial prototype for launching test prompts via Python scripts.
-- Basic data collection pipeline to record compliance metrics.
-- Discussion and planning; hackathon proof-of-concept established.
-
 > _Having fun! Probably not ready by the end of the hackathon._
 
 ## Work To Be Done
